@@ -105,7 +105,7 @@ Início: 20/10/2026.
 | ID | Tarefa | Responsável | Arquivos | Status |
 |---|---|---|---|---|
 | V01 | Criar repositórios, estrutura do site e tarefas do grupo | Leonardo Camero | todos | Concluído (20/10/2026): repositórios publicados; todos os integrantes convidados como colaboradores |
-| V02 | Base visual: cores, fontes, header, footer e botões; revisão e merge | Leonardo Camero | `css/base.css` | Em andamento: cores, fontes, header, footer e botões prontos; aguardando arquivo oficial do logo |
+| V02 | Base visual: cores, fontes, header, footer e botões; revisão e merge | Leonardo Camero | `css/base.css` | Em andamento: base concluída (cores, fontes, header, footer, botões, menu do celular e classes compartilhadas); aguardando arquivo oficial do logo |
 | V03 | Home: hero, números das marcas e escolha PKZ / One to One | Pedro Henrique Godoy | `index.html`, `css/index.css` | A fazer |
 | V04 | PKZ: hero, faixa de confiança, sobre nós, como funciona | João Duarte | `pkz.html` (blocos do João), `css/pkz-joao.css` | A fazer |
 | V05 | PKZ: prévia do relatório, cuidado e segurança, depoimentos, perguntas frequentes, chamada para agendar | Kaue Reis | `pkz.html` (blocos do Kaue), `css/pkz-kaue.css` | A fazer |
@@ -120,6 +120,7 @@ Início: 20/10/2026.
 - 20/10/2026: textos da página PKZ ajustados para tirar acesso só de leitura e perfil do atleta, que ficam fora do escopo da AP2.
 - 21/10/2026: logo mantido em texto ("PKZ | One to One") até o cliente enviar o arquivo oficial.
 - 21/10/2026: João, Santiago e Arthur convidados como colaboradores do repositório vanilla; o grupo completo pode começar as branches.
+- 21/10/2026: base visual finalizada e classes compartilhadas documentadas nas tarefas do grupo.
 
 ### 6.4 Próxima etapa — site React
 
