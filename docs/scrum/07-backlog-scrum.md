@@ -96,7 +96,7 @@ Itens derivados das demandas do cliente e do brainstorm. **Prioridade:** Essenci
 - Cada integrante fica responsável por uma página (ou por um conjunto de seções) do site vanilla.
 - Cada um trabalha numa branch com o próprio nome e abre um Pull Request para a `main`.
 - O Scrum Master revisa e faz o merge de todas as branches. O `css/base.css` (cores, fontes, header, footer e botões) é compartilhado e só ele edita.
-- As orientações individuais ficam na pasta `tarefas/` do repositório vanilla.
+- Cada integrante recebeu orientações individuais da sua parte (arquivos, conteúdo e passo a passo no Git), que ficaram no repositório vanilla durante a sprint.
 
 ### 6.3 Sprint 1 — site vanilla
 
