@@ -111,7 +111,7 @@ Início: 20/10/2026.
 | V05 | PKZ: prévia do relatório, cuidado e segurança, depoimentos, perguntas frequentes, chamada para agendar | Kaue Reis | `pkz.html` (blocos do Kaue), `css/pkz-kaue.css` | Concluído (22/10/2026, PR #2) |
 | V06 | One to One: hero, sobre nós, modalidades, diferenciais, avaliações, unidades, chamada para agendar | Santiago Alejo | `onetoone.html`, `css/onetoone.css` | Concluído (24/10/2026, PR #4); espaçamentos ajustados na revisão |
 | V07 | Agendamento: calendário com filtro e disponibilidade, modal com validação | David Madureira | `agendamento.html`, `css/agendamento.css`, `js/agendamento.js` | Concluído (24/10/2026, merge em 25/10/2026) |
-| V08 | Confirmado: resumo do agendamento e aviso pelo WhatsApp | Arthur Aires | `confirmado.html`, `css/confirmado.css`, `js/confirmado.js` | Concluído (25/10/2026): montada pelo Scrum Master na revisão final, já que a branch não foi entregue |
+| V08 | Confirmado: resumo do agendamento e aviso pelo WhatsApp | Arthur Aires | `confirmado.html`, `css/confirmado.css`, `js/confirmado.js` | Concluído (27/10/2026, PR #7) |
 | V09 | Publicar o site vanilla no GitHub Pages | Leonardo Camero | — | Concluído: site completo no ar desde 25/10/2026; atualizado a cada merge |
 
 **Registro do Scrum Master**
@@ -123,10 +123,11 @@ Início: 20/10/2026.
 - 20/10/2026: o professor definiu as regras da apresentação do vanilla: site responsivo, menu hambúrguer com JS adicionando e retirando classe, nenhum espaço de imagem vazio, layouts com respiro e alinhamento, uso do JS de agendamento mostrado em sala e convite do professor nos repositórios.
 - 22/10/2026 a 24/10/2026: entregas do Kaue, do Pedro, do João, do Santiago e do David nas próprias branches.
 - 25/10/2026: revisão de todas as branches (cada um mexeu só nos próprios arquivos e blocos) e merge na `main` sem conflitos; teste em 390px e 1366px, sem rolagem horizontal.
-- 25/10/2026: página de confirmação montada na revisão; fluxo completo do agendamento testado (calendário, validação do modal e resumo com os dados da URL).
+- 25/10/2026: fluxo completo do agendamento testado (calendário, validação do modal e resumo com os dados da URL).
 - 25/10/2026: ajustes de espaçamento no One to One e mapas reais do Google nas unidades.
 - 26/10/2026: os espaços de foto vazios foram trocados por fotos de domínio público (CC0), até o cliente enviar as fotos oficiais (PR #5 no repositório vanilla).
 - 26/10/2026: professor convidado como colaborador do repositório vanilla.
+- 27/10/2026: entrega do Arthur (página de confirmação, PR #7), com título e telefone ajustados ao padrão do site na revisão.
 
 ### 6.4 Próxima etapa — site React
 
