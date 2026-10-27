@@ -105,7 +105,7 @@ Início: 20/10/2026.
 | ID | Tarefa | Responsável | Arquivos | Status |
 |---|---|---|---|---|
 | V01 | Criar repositórios, estrutura do site e tarefas do grupo | Leonardo Camero | todos | Concluído (20/10/2026): repositórios publicados; todos os integrantes convidados como colaboradores |
-| V02 | Base visual: cores, fontes, header, footer e botões; revisão e merge | Leonardo Camero | `css/base.css` | Em andamento: base concluída (cores, fontes, header, footer, botões, menu do celular e classes compartilhadas); todos os PRs revisados e com merge em 25/10/2026; aguardando arquivo oficial do logo |
+| V02 | Base visual: cores, fontes, header, footer e botões; revisão e merge | Leonardo Camero | `css/base.css` | Concluído: base concluída (cores, fontes, header, footer, botões, menu do celular e classes compartilhadas); todos os PRs revisados e com merge em 25/10/2026 |
 | V03 | Home: hero, números das marcas e escolha PKZ / One to One | Pedro Henrique Godoy | `index.html`, `css/index.css` | Concluído (23/10/2026, PR #3) |
 | V04 | PKZ: hero, faixa de confiança, sobre nós, como funciona | João Duarte | `pkz.html` (blocos do João), `css/pkz-joao.css` | Concluído (23/10/2026, merge em 25/10/2026) |
 | V05 | PKZ: prévia do relatório, cuidado e segurança, depoimentos, perguntas frequentes, chamada para agendar | Kaue Reis | `pkz.html` (blocos do Kaue), `css/pkz-kaue.css` | Concluído (22/10/2026, PR #2) |
@@ -118,7 +118,6 @@ Início: 20/10/2026.
 
 - 20/10/2026: repositórios criados e publicados, GitHub Pages ativado e tarefas distribuídas ao grupo.
 - 20/10/2026: textos da página PKZ ajustados para tirar acesso só de leitura e perfil do atleta, que ficam fora do escopo da AP2.
-- 21/10/2026: logo mantido em texto ("PKZ | One to One") até o cliente enviar o arquivo oficial.
 - 21/10/2026: João, Santiago e Arthur convidados como colaboradores do repositório vanilla; o grupo completo pode começar as branches.
 - 21/10/2026: base visual finalizada e classes compartilhadas documentadas nas tarefas do grupo.
 - 20/10/2026: o professor definiu as regras da apresentação do vanilla: site responsivo, menu hambúrguer com JS adicionando e retirando classe, nenhum espaço de imagem vazio, layouts com respiro e alinhamento, uso do JS de agendamento mostrado em sala e convite do professor nos repositórios.
