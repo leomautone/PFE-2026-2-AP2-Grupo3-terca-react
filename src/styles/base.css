@@ -1,0 +1,522 @@
+/* =========================================
+   BASE — compartilhado por todas as páginas
+   Só o Leonardo edita este arquivo.
+   Precisa de alguma mudança aqui? Fala com ele.
+   As fontes (Oswald e Inter) são carregadas no index.html.
+   ========================================= */
+/* ---------- Cores e medidas ---------- */
+:root {
+  /* azul do logo da PKZ */
+  --azul-marinho: #000080;
+  --azul-escuro: #00005e;
+
+  /* PKZ: azul mais vivo */
+  --azul-pkz: #2d36d8;
+  --gradiente-pkz: linear-gradient(135deg, #3039e0 0%, #000080 100%);
+
+  /* One to One: azul mais sóbrio */
+  --azul-onetoone: #0b0b6e;
+  --gradiente-onetoone: linear-gradient(135deg, #1c1c8a 0%, #00005e 100%);
+
+  --branco: #ffffff;
+  --fundo-claro: #f3f4fa;
+  --lilas: #e9eafc;
+  --texto: #0d0d4d;
+  --texto-suave: #5b5f82;
+  --borda: #dfe1f0;
+
+  /* disponibilidade do agendamento */
+  --verde: #1f9d6b;
+  --laranja: #d98a00;
+  --vermelho: #d83a3a;
+  --cinza: #5f6480;
+
+  --fonte-titulo: "Oswald", sans-serif;
+  --fonte-texto: "Inter", sans-serif;
+
+  --raio: 16px;
+  --largura-max: 1120px;
+}
+
+/* ---------- Reset ---------- */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--fonte-texto);
+  color: var(--texto);
+  background: var(--branco);
+  line-height: 1.5;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+button,
+input,
+select {
+  font: inherit;
+}
+
+/* ---------- Classes de uso geral ---------- */
+.container {
+  width: 100%;
+  max-width: var(--largura-max);
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.secao {
+  padding: 88px 0;
+}
+
+.secao-clara {
+  background: var(--fundo-claro);
+}
+
+.secao-escura {
+  background: var(--azul-escuro);
+  color: var(--branco);
+}
+
+/* fundos em gradiente de cada marca (texto branco) */
+.secao-pkz {
+  background: var(--gradiente-pkz);
+  color: var(--branco);
+}
+
+.secao-onetoone {
+  background: var(--gradiente-onetoone);
+  color: var(--branco);
+}
+
+h1,
+h2,
+.titulo {
+  font-family: var(--fonte-titulo);
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 1.05;
+}
+
+h1 {
+  font-size: clamp(2.6rem, 6vw, 4.2rem);
+}
+
+h2 {
+  font-size: clamp(2rem, 4vw, 2.6rem);
+  color: var(--azul-escuro);
+}
+
+.secao-escura h2,
+.secao-pkz h2,
+.secao-onetoone h2 {
+  color: var(--branco);
+}
+
+/* subtítulo grande logo abaixo do título */
+.subtitulo {
+  font-size: 1.2rem;
+  color: var(--texto-suave);
+  margin-top: 12px;
+  max-width: 560px;
+}
+
+.secao-escura .subtitulo,
+.secao-pkz .subtitulo,
+.secao-onetoone .subtitulo {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+/* etiqueta pequena em cima do título (ex.: SOBRE NÓS) */
+.etiqueta {
+  display: inline-block;
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--azul-pkz);
+  margin-bottom: 10px;
+}
+
+.secao-escura .etiqueta,
+.secao-pkz .etiqueta,
+.secao-onetoone .etiqueta {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+/* área reservada para foto ou vídeo do cliente */
+.foto {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 240px;
+  border-radius: var(--raio);
+  background: var(--gradiente-pkz);
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 16px;
+}
+
+/* quando a foto real entra, a imagem preenche a área sem distorcer */
+img.foto {
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  object-fit: cover;
+}
+
+/* ---------- Grades e cards (podem usar em qualquer página) ---------- */
+.grade-2,
+.grade-3,
+.grade-4 {
+  display: grid;
+  gap: 24px;
+}
+
+.grade-2 {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.grade-3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.grade-4 {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+/* card branco com sombra leve */
+.card {
+  background: var(--branco);
+  border: 1px solid var(--borda);
+  border-radius: var(--raio);
+  padding: 24px;
+  box-shadow: 0 8px 24px rgba(0, 0, 80, 0.06);
+}
+
+.card h3 {
+  font-size: 1rem;
+  color: var(--azul-escuro);
+  margin-bottom: 8px;
+}
+
+.card p {
+  font-size: 0.85rem;
+  color: var(--texto-suave);
+}
+
+/* etiqueta em formato de pílula (ex.: TODAS AS IDADES, FUTEVÔLEI) */
+.pilula {
+  display: inline-block;
+  padding: 4px 12px;
+  border-radius: 999px;
+  background: var(--lilas);
+  color: var(--azul-marinho);
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.estrelas {
+  color: #f5a623;
+  letter-spacing: 2px;
+}
+
+/* número grande (ex.: 140+, 4,9) */
+.numero,
+.card .numero {
+  font-family: var(--fonte-titulo);
+  font-size: 2.6rem;
+  font-weight: 600;
+  line-height: 1;
+}
+
+/* ---------- Botões ---------- */
+.botao {
+  display: inline-block;
+  padding: 12px 22px;
+  border: 2px solid transparent;
+  border-radius: 999px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.2s, opacity 0.2s;
+}
+
+.botao:hover {
+  transform: translateY(-2px);
+  opacity: 0.9;
+}
+
+/* sobre fundo escuro: botão branco com texto azul */
+.botao-claro {
+  background: var(--branco);
+  color: var(--azul-marinho);
+}
+
+/* sobre fundo claro: botão azul com texto branco */
+.botao-escuro {
+  background: var(--azul-marinho);
+  color: var(--branco);
+}
+
+/* ---------- Header ---------- */
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: var(--azul-escuro);
+  color: var(--branco);
+}
+
+/* versão branca, usada nas páginas de agendamento */
+.header-claro {
+  background: var(--branco);
+  color: var(--azul-marinho);
+  border-bottom: 1px solid var(--borda);
+}
+
+.header-conteudo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  height: 72px;
+}
+
+/* logo oficial da PKZ + "ONE TO ONE" em texto (o One to One ainda não tem logo próprio) */
+.logo {
+  display: inline-flex;
+  align-items: center;
+  font-family: var(--fonte-titulo);
+  font-size: 1.3rem;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.logo span {
+  font-weight: 500;
+  font-size: 1.05rem;
+  margin-left: 8px;
+  padding-left: 10px;
+  border-left: 2px solid currentColor;
+}
+
+.logo img {
+  height: 32px;
+  width: auto;
+}
+
+/* em fundo escuro o logo fica branco */
+.header .logo img,
+.footer .logo img {
+  filter: brightness(0) invert(1);
+}
+
+/* no header claro ele volta para o azul original */
+.header-claro .logo img {
+  filter: none;
+}
+
+.menu {
+  display: flex;
+  gap: 28px;
+  font-size: 0.9rem;
+}
+
+.menu a {
+  opacity: 0.8;
+}
+
+.menu a:hover,
+.menu a.ativo {
+  opacity: 1;
+  font-weight: 600;
+}
+
+/* botão ☰ só aparece no celular */
+.menu-botao {
+  display: none;
+  background: none;
+  border: none;
+  color: inherit;
+  font-size: 1.6rem;
+  cursor: pointer;
+}
+
+/* ---------- Footer ---------- */
+.footer {
+  background: var(--azul-escuro);
+  color: rgba(255, 255, 255, 0.75);
+  padding: 56px 0 24px;
+  font-size: 0.85rem;
+}
+
+.footer-colunas {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 32px;
+}
+
+.footer .logo {
+  color: var(--branco);
+  display: inline-flex;
+  margin-bottom: 8px;
+}
+
+.footer h3 {
+  color: var(--branco);
+  font-size: 0.75rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+
+.footer li {
+  margin-bottom: 6px;
+}
+
+.footer a:hover {
+  color: var(--branco);
+}
+
+.footer-final {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  margin-top: 40px;
+  padding-top: 20px;
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
+  font-size: 0.75rem;
+}
+
+/* ---------- Celular ---------- */
+@media (max-width: 900px) {
+  .grade-3,
+  .grade-4 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 800px) {
+  .header-conteudo {
+    position: relative;
+    gap: 12px;
+  }
+
+  .menu-botao {
+    display: block;
+    order: 3;
+  }
+
+  /* menu vira uma lista embaixo do header */
+  .menu {
+    display: none;
+    position: absolute;
+    top: 72px;
+    left: 0;
+    right: 0;
+    flex-direction: column;
+    gap: 0;
+    background: var(--azul-escuro);
+    padding: 8px 24px 16px;
+  }
+
+  .header-claro .menu {
+    background: var(--branco);
+    border-bottom: 1px solid var(--borda);
+  }
+
+  .menu-aberto .menu {
+    display: flex;
+  }
+
+  .menu a {
+    padding: 12px 0;
+    border-bottom: 1px solid rgba(128, 128, 160, 0.2);
+  }
+
+  .header .botao {
+    padding: 10px 16px;
+    margin-left: auto;
+  }
+
+  .grade-2,
+  .grade-3,
+  .grade-4 {
+    grid-template-columns: 1fr;
+  }
+
+  .secao {
+    padding: 64px 0;
+  }
+
+  .footer-colunas {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .footer-final {
+    flex-direction: column;
+  }
+}
+
+/* celular pequeno */
+@media (max-width: 420px) {
+  .footer-colunas {
+    grid-template-columns: 1fr;
+  }
+
+  .header .botao {
+    font-size: 0.8rem;
+    padding: 8px 12px;
+    white-space: nowrap;
+  }
+}
+
+/* celular bem estreito (320px): logo menor pra caber logo + botão + ☰ */
+@media (max-width: 360px) {
+  .container {
+    padding: 0 16px;
+  }
+
+  .header-conteudo {
+    gap: 8px;
+  }
+
+  .header .logo img {
+    height: 26px;
+  }
+
+  .header .logo span {
+    font-size: 0.9rem;
+    margin-left: 6px;
+    padding-left: 8px;
+  }
+}
