@@ -139,8 +139,8 @@ O Scrum Master sobe a base do projeto primeiro. As branches dos integrantes só 
 
 | ID | Tarefa | Responsável | Arquivos | Status |
 |---|---|---|---|---|
-| R01 | Criar o projeto React, rotas das páginas e publicação no Vercel | Leonardo Camero | estrutura do projeto, `vercel.json` | A fazer |
-| R02 | Base visual em componentes: header, footer, botões, menu hambúrguer e CSS base; revisão e merge | Leonardo Camero | `src/components/`, CSS base | A fazer |
+| R01 | Criar o projeto React, rotas das páginas e publicação no Vercel | Leonardo Camero | estrutura do projeto, `vercel.json` | Em andamento: projeto e rotas prontos (PR #6); falta publicar no Vercel |
+| R02 | Base visual em componentes: header, footer, botões, menu hambúrguer e CSS base; revisão e merge | Leonardo Camero | `src/components/`, CSS base | Em revisão (PR #6) |
 | R03 | Home: hero, números das marcas e escolha PKZ / One to One | Pedro Henrique Godoy | `src/pages/Home.jsx` e CSS da página | A fazer |
 | R04 | PKZ: hero, faixa de confiança, sobre nós, como funciona | João Duarte | componentes das seções do João | A fazer |
 | R05 | PKZ: prévia do relatório, cuidado e segurança, depoimentos, perguntas frequentes, chamada para agendar | Kaue Reis | componentes das seções do Kaue | A fazer |
@@ -162,3 +162,4 @@ O Scrum Master sobe a base do projeto primeiro. As branches dos integrantes só 
 
 - 03/11/2026: início da Sprint 2.
 - 07/11/2026: divisão do grupo mantida igual à do vanilla, com todos de acordo. Entrega marcada para 17/11/2026. O professor ainda não passou regras de apresentação para o React.
+- 07/11/2026: base do React criada (Vite, rotas, header, footer, menu do celular e CSS base vindos do vanilla) e orientações de cada integrante na pasta `tarefas/` (PR #6).
