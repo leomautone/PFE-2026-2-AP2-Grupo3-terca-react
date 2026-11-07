@@ -30,14 +30,33 @@ O cliente é a **PKZ / One to One**, formada por dois estúdios de treinamento e
 | Site vanilla | HTML, CSS e JS puro (agendamento só visual) | GitHub Pages | [PFE-2026-2-AP2-Grupo3-terca-vanilla](https://github.com/leomautone/PFE-2026-2-AP2-Grupo3-terca-vanilla) |
 | Site React (AP2) | React (agendamento integrado ao back-end) | Vercel | este repositório |
 
-O código React começa depois que o site vanilla estiver pronto. Por enquanto, este repositório tem só a documentação.
+O site vanilla está pronto. Este repositório tem a base do site React (criada com Vite) e a documentação.
 
 - **Protótipo no Figma:** https://www.figma.com/design/CQmuVXYjxTUkLDg5CzWbk0
 - **Repositório da AP1:** https://github.com/leomautone/PFE-2026-2-AP1-Grupo3-terca
 
+## Como rodar o site
+
+Precisa do [Node.js](https://nodejs.org/) instalado.
+
+```bash
+npm install      # só na primeira vez (ou quando mudar o package.json)
+npm run dev      # abre o site em http://localhost:5173 e atualiza sozinho a cada alteração
+npm run build    # gera a versão final em dist/ (é o que o Vercel publica)
+```
+
 ## Estrutura do repositório
 
 ```
+index.html          # o único HTML do site: o React monta todas as páginas dentro dele
+vercel.json         # faz o Vercel abrir o site em qualquer endereço (ex.: /pkz) sem dar 404
+public/img/         # fotos e logo (no código, o caminho começa com /img/...)
+src/
+  main.jsx          # ponto de entrada: liga o React, o roteador e o CSS base
+  App.jsx           # rotas: qual página aparece em cada endereço
+  styles/base.css   # cores, fontes, header, footer, botões e classes compartilhadas (só o Leonardo edita)
+  components/       # Header, Footer, Layout e useTitulo (só o Leonardo edita)
+  pages/            # uma página por arquivo; a PKZ fica em pages/pkz/, dividida em duas partes
 docs/
   entrevista/       # transcrição da entrevista com o cliente (v1) e demandas organizadas em tópicos (v2)
   brainstorm/       # ideias levantadas pelo grupo a partir das demandas
