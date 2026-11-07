@@ -129,6 +129,36 @@ Início: 20/10/2026.
 - 26/10/2026: professor convidado como colaborador do repositório vanilla.
 - 27/10/2026: entrega do Arthur (página de confirmação, PR #7), com título e telefone ajustados ao padrão do site na revisão.
 
-### 6.4 Próxima etapa — site React
+### 6.4 Sprint 2 — site React
 
-Começa depois que o site vanilla estiver pronto: migrar as páginas para componentes React, integrar o agendamento ao back-end e publicar no Vercel.
+Início: 03/11/2026. **Entrega: 17/11/2026.**
+
+O site React segue o mesmo jeito de trabalhar do vanilla (seção 6.2): mesmo grupo, cada integrante com a mesma parte que fez no vanilla, branch com o próprio nome e Pull Request para a `main`. Primeiro cada um migra a sua parte; os ajustes finais vêm depois, feitos pelo Scrum Master.
+
+O Scrum Master sobe a base do projeto primeiro. As branches dos integrantes só começam depois disso.
+
+| ID | Tarefa | Responsável | Arquivos | Status |
+|---|---|---|---|---|
+| R01 | Criar o projeto React, rotas das páginas e publicação no Vercel | Leonardo Camero | estrutura do projeto, `vercel.json` | A fazer |
+| R02 | Base visual em componentes: header, footer, botões, menu hambúrguer e CSS base; revisão e merge | Leonardo Camero | `src/components/`, CSS base | A fazer |
+| R03 | Home: hero, números das marcas e escolha PKZ / One to One | Pedro Henrique Godoy | `src/pages/Home.jsx` e CSS da página | A fazer |
+| R04 | PKZ: hero, faixa de confiança, sobre nós, como funciona | João Duarte | componentes das seções do João | A fazer |
+| R05 | PKZ: prévia do relatório, cuidado e segurança, depoimentos, perguntas frequentes, chamada para agendar | Kaue Reis | componentes das seções do Kaue | A fazer |
+| R06 | One to One: hero, sobre nós, modalidades, diferenciais, avaliações, unidades, chamada para agendar | Santiago Alejo | `src/pages/OneToOne.jsx` e CSS da página | A fazer |
+| R07 | Agendamento: calendário com filtro e disponibilidade, modal com validação | David Madureira | `src/pages/Agendamento.jsx` e CSS da página | A fazer |
+| R08 | Confirmado: resumo do agendamento e aviso pelo WhatsApp | Arthur Aires | `src/pages/Confirmado.jsx` e CSS da página | A fazer |
+| R09 | Integrar o agendamento ao back-end | A definir | — | Aguardando definição da API com o professor |
+
+**Pendências e ajustes finais**
+
+| ID | Item | Responsável | Status |
+|---|---|---|---|
+| A01 | Definir o back-end do agendamento: API do professor ou do próprio grupo. O site começa sem back-end. | Leonardo Camero (com o professor) | Em aberto |
+| A02 | Calendário do agendamento no celular: em telas pequenas ficam colunas demais e o layout precisa mudar | Leonardo Camero | Ajuste final |
+| A03 | Confirmar com o cliente o campo "Estúdio" no agendamento (sugestão do grupo desde o protótipo) | Leonardo Camero | Em aberto |
+| A04 | Trocar as fotos provisórias (CC0) pelas fotos oficiais quando o cliente enviar | Leonardo Camero | Aguardando cliente |
+
+**Registro do Scrum Master**
+
+- 03/11/2026: início da Sprint 2.
+- 07/11/2026: divisão do grupo mantida igual à do vanilla, com todos de acordo. Entrega marcada para 17/11/2026. O professor ainda não passou regras de apresentação para o React.
