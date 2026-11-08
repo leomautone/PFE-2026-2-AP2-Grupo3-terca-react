@@ -1,0 +1,132 @@
+/* src/pages/Home.css — Pedro Henrique
+   Toda regra começa com .pagina-home (o CSS de todas as páginas fica carregado junto). */
+
+/* ---------- Hero ---------- */
+.pagina-home .hero {
+  /* 72px = altura do header sticky */
+  min-height: calc(100vh - 72px);
+  min-height: calc(100svh - 72px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  padding: 4rem 0 5rem;
+}
+.pagina-home .hero-conteudo {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 3rem;
+  align-items: center;
+}
+.pagina-home .hero h1 {
+  font-size: clamp(2.6rem, 7vw, 5.5rem);
+  margin: 0.5rem 0 1.25rem;
+}
+.pagina-home .hero .subtitulo { max-width: 34rem; }
+.pagina-home .hero-botoes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 2rem;
+}
+.pagina-home .hero-foto {
+  min-height: 24rem;
+  height: 100%;
+  padding: 0;
+  overflow: hidden;
+}
+.pagina-home .hero-foto img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.pagina-home .hero-rolar {
+  position: absolute;
+  bottom: 1.5rem;
+  left: 0;
+  right: 0;
+  text-align: center;
+  font-size: 0.9rem;
+  opacity: 0.85;
+}
+
+/* ---------- Números ---------- */
+.pagina-home .numeros { padding: 3rem 0; }
+.pagina-home .numero-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 0.5rem;
+}
+.pagina-home .numero-item .numero { font-size: clamp(2.5rem, 5vw, 3.75rem); }
+.pagina-home .numero-legenda { font-size: 0.9rem; opacity: 0.85; max-width: 14rem; }
+
+/* ---------- Escolha seu caminho ---------- */
+.pagina-home .estudios-cabecalho { text-align: center; margin-bottom: 2.5rem; }
+.pagina-home .estudios-cabecalho .subtitulo { margin-left: auto; margin-right: auto; }
+
+.pagina-home .estudio-card {
+  position: relative;
+  overflow: hidden;
+  min-height: 30rem;
+  padding: 2.25rem;
+  border-radius: var(--raio);
+  color: var(--branco);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.pagina-home .estudio-pkz { background: var(--gradiente-pkz); }
+.pagina-home .estudio-onetoone { background: var(--gradiente-onetoone); }
+
+/* a etiqueta do base é azul; dentro do card (fundo azul) precisa ser clara */
+.pagina-home .estudio-card .etiqueta { color: rgba(255, 255, 255, 0.75); }
+.pagina-home .estudio-card h3 {
+  font-family: var(--fonte-titulo);
+  font-size: clamp(2.25rem, 5vw, 3.25rem);
+  font-weight: 700;
+  line-height: 1;
+  margin: 0.25rem 0 1rem;
+}
+.pagina-home .estudio-card ul {
+  margin: 1.25rem 0 2rem;
+  display: grid;
+  gap: 0.6rem;
+}
+.pagina-home .estudio-card li::before { content: "✓ "; font-weight: 700; }
+.pagina-home .estudio-card .botao { margin-top: auto; }
+
+/* Extra: frase que aparece no hover (só CSS) */
+.pagina-home .estudio-frase {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  text-align: center;
+  font-family: var(--fonte-titulo);
+  font-size: clamp(1.75rem, 4vw, 2.5rem);
+  text-transform: uppercase;
+  background: rgba(0, 0, 80, 0.7);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.25s ease;
+}
+.pagina-home .estudio-card:hover .estudio-frase,
+.pagina-home .estudio-card:focus-within .estudio-frase { opacity: 1; }
+
+/* ---------- Celular ---------- */
+@media (max-width: 800px) {
+  .pagina-home .hero { padding: 3rem 0 5rem; }
+  .pagina-home .hero-conteudo { grid-template-columns: 1fr; }
+  .pagina-home .hero-foto { min-height: 14rem; }
+  /* números em 2 colunas (o base deixaria uma embaixo da outra) */
+  .pagina-home .numeros .grade-4 { grid-template-columns: repeat(2, 1fr); }
+  .pagina-home .estudio-card { min-height: 0; padding: 1.75rem; }
+  .pagina-home .estudio-card .botao { margin-top: 0; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .pagina-home .estudio-frase { transition: none; }
+}
