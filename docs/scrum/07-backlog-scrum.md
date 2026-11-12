@@ -88,7 +88,7 @@ Itens derivados das demandas do cliente e do brainstorm. **Prioridade:** Essenci
 
 - Duas entregas: **site vanilla** (HTML, CSS e JS puro, no GitHub Pages) e **site React** (produto final da AP2, no Vercel).
 - Sem cadastro, sem login e sem cards ou dados de treino de atletas.
-- A única integração com back-end é o **agendamento de aula experimental**: no vanilla é só visual, no React é obrigatório.
+- A única integração com back-end seria o **agendamento de aula experimental**: no vanilla é só visual. **Atualização em 12/11/2026:** o React também fica sem back-end, e o agendamento usa horários simulados.
 - As telas 07 (perfil do aluno) e 08 (relatório para os pais) ficaram fora do escopo da AP2. Os itens PB01–PB05 e PB09–PB10 continuam no backlog como proposta para uma próxima etapa.
 
 ### 6.2 Como o grupo vai trabalhar
@@ -140,20 +140,20 @@ O Scrum Master sobe a base do projeto primeiro. As branches dos integrantes só 
 | ID | Tarefa | Responsável | Arquivos | Status |
 |---|---|---|---|---|
 | R01 | Criar o projeto React, rotas das páginas e publicação no Vercel | Leonardo Camero | estrutura do projeto, `vercel.json` | Em andamento: projeto e rotas prontos (PR #6); falta publicar no Vercel |
-| R02 | Base visual em componentes: header, footer, botões, menu hambúrguer e CSS base; revisão e merge | Leonardo Camero | `src/components/`, CSS base | Em revisão (PR #6) |
-| R03 | Home: hero, números das marcas e escolha PKZ / One to One | Pedro Henrique Godoy | `src/pages/Home.jsx` e CSS da página | A fazer |
+| R02 | Base visual em componentes: header, footer, botões, menu hambúrguer e CSS base; revisão e merge | Leonardo Camero | `src/components/`, CSS base | Concluído (07/11/2026, PR #6) |
+| R03 | Home: hero, números das marcas e escolha PKZ / One to One | Pedro Henrique Godoy | `src/pages/Home.jsx` e CSS da página | Concluído (08/11/2026); pequenos ajustes pendentes |
 | R04 | PKZ: hero, faixa de confiança, sobre nós, como funciona | João Duarte | componentes das seções do João | A fazer |
 | R05 | PKZ: prévia do relatório, cuidado e segurança, depoimentos, perguntas frequentes, chamada para agendar | Kaue Reis | componentes das seções do Kaue | A fazer |
 | R06 | One to One: hero, sobre nós, modalidades, diferenciais, avaliações, unidades, chamada para agendar | Santiago Alejo | `src/pages/OneToOne.jsx` e CSS da página | A fazer |
 | R07 | Agendamento: calendário com filtro e disponibilidade, modal com validação | David Madureira | `src/pages/Agendamento.jsx` e CSS da página | A fazer |
-| R08 | Confirmado: resumo do agendamento e aviso pelo WhatsApp | Arthur Aires | `src/pages/Confirmado.jsx` e CSS da página | A fazer |
-| R09 | Integrar o agendamento ao back-end | A definir | — | Aguardando definição da API com o professor |
+| R08 | Confirmado: resumo do agendamento e aviso pelo WhatsApp | Arthur Aires | `src/pages/Confirmado.jsx` e CSS da página | Em revisão (PR #7) |
+| R09 | Integrar o agendamento ao back-end | — | — | Cancelada (12/11/2026): o site não terá back-end |
 
 **Pendências e ajustes finais**
 
 | ID | Item | Responsável | Status |
 |---|---|---|---|
-| A01 | Definir o back-end do agendamento: API do professor ou do próprio grupo. O site começa sem back-end. | Leonardo Camero (com o professor) | Em aberto |
+| A01 | Definir o back-end do agendamento: API do professor ou do próprio grupo. O site começa sem back-end. | Leonardo Camero (com o professor) | Resolvido (12/11/2026): sem back-end; o agendamento fica com horários simulados |
 | A02 | Calendário do agendamento no celular: em telas pequenas ficam colunas demais e o layout precisa mudar | Leonardo Camero | Ajuste final |
 | A03 | Confirmar com o cliente o campo "Estúdio" no agendamento (sugestão do grupo desde o protótipo) | Leonardo Camero | Em aberto |
 | A04 | Trocar as fotos provisórias (CC0) pelas fotos oficiais quando o cliente enviar | Leonardo Camero | Aguardando cliente |
@@ -163,3 +163,6 @@ O Scrum Master sobe a base do projeto primeiro. As branches dos integrantes só 
 - 03/11/2026: início da Sprint 2.
 - 07/11/2026: divisão do grupo mantida igual à do vanilla, com todos de acordo. Entrega marcada para 17/11/2026. O professor ainda não passou regras de apresentação para o React.
 - 07/11/2026: base do React criada (Vite, rotas, header, footer, menu do celular e CSS base vindos do vanilla) e orientações de cada integrante na pasta `tarefas/` (PR #6).
+- 08/11/2026: entrega do Pedro (Home), enviada direto na `main`, sem PR.
+- 10/11/2026: entrega do Arthur (confirmação, PR #7).
+- 12/11/2026: definido que o site React não terá back-end; o agendamento fica com horários simulados.
