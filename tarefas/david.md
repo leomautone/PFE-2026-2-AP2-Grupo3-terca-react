@@ -2,7 +2,7 @@
 
 David, você vai passar para React a **página de agendamento**: calendário com filtro e disponibilidade, lateral, modal do dia, validação e ida para a confirmação. É a parte com mais JavaScript do site, porque o `js/agendamento.js` vai ser reescrito do jeito do React. Comece cedo e me chama se travar.
 
-O back-end ainda não está definido (a API depende de conversa com o professor). Por isso, **a disponibilidade continua simulada, como no vanilla**. Você só deixa a simulação num arquivo separado, para depois trocarmos pela API sem mexer na página.
+O site **não vai ter back-end**. Por isso, **a disponibilidade continua simulada, como no vanilla**. Você só deixa a simulação num arquivo separado, para a página ficar mais fácil de ler.
 
 ## O que você edita
 
@@ -108,7 +108,7 @@ A grande diferença: no vanilla, o JS **mexia no HTML** (`createElement`, `repla
 
 ### 1. Separe a simulação em `dadosAgendamento.js`
 
-Leve para esse arquivo tudo o que vai virar API no futuro e exporte com `export`: a lista de `horarios`, a lista de `estudios` e a função `obterVagas(data, estudio)`. Deixe um comentário no topo, por exemplo: "Dados simulados. Quando a API for definida, só este arquivo muda."
+Leve para esse arquivo os dados simulados e exporte com `export`: a lista de `horarios`, a lista de `estudios` e a função `obterVagas(data, estudio)`. Deixe um comentário no topo, por exemplo: "Dados simulados: o site não tem back-end."
 
 A página importa assim:
 
