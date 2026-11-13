@@ -99,12 +99,12 @@ export default function PkzJoao() {
             <li className="card etapa">
               <span className="numero">02</span>
               <h3>Plano do mês</h3>
-              <p>Com base nos resultados, montamos o ciclo de treinos do mês, sob medida para o atleta.</p>
+              <p>Com base nos resultados, montamos o ciclo de treinos do mês, sob medida para os atletas.</p>
             </li>
             <li className="card etapa">
               <span className="numero">03</span>
               <h3>Treino com registro</h3>
-              <p>A cada aula o professor registra o que foi treinado e como o atleta respondeu.</p>
+              <p> A cada aula o professor registra o que foi treinado e como o atleta respondeu.</p>
             </li>
             <li className="card etapa">
               <span className="numero">04</span>
