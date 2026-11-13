@@ -1,0 +1,217 @@
+.pkz-joao #hero {
+  padding: 88px 0;
+}
+
+.pkz-joao #hero .hero-conteudo {
+  display: grid;
+  grid-template-columns: 1.05fr 0.95fr;
+  align-items: center;
+  gap: 56px;
+}
+
+.pkz-joao #hero .hero-texto h1 {
+  max-width: 560px;
+}
+
+.pkz-joao #hero .subtitulo {
+  max-width: 560px;
+}
+
+.pkz-joao #hero .hero-acoes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 28px;
+}
+
+.pkz-joao #hero .hero-foto {
+  min-height: 380px;
+  background: linear-gradient(145deg, rgba(255, 255, 255, 0.16), rgba(0, 0, 80, 0.2)), var(--azul-marinho);
+}
+
+.pkz-joao #confianca {
+  padding: 36px 0;
+  background: var(--lilas);
+}
+
+.pkz-joao #confianca .confianca-grade {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.pkz-joao #confianca .confianca-item {
+  padding: 8px 24px;
+  border-right: 1px solid rgba(0, 0, 128, 0.16);
+}
+
+.pkz-joao #confianca .confianca-item:first-child {
+  padding-left: 0;
+}
+
+.pkz-joao #confianca .confianca-item:last-child {
+  padding-right: 0;
+  border-right: 0;
+}
+
+.pkz-joao #confianca .confianca-item h2 {
+  margin-bottom: 8px;
+  color: var(--azul-marinho);
+  font-family: var(--fonte-texto);
+  font-size: 0.95rem;
+  font-weight: 700;
+  line-height: 1.35;
+  text-transform: none;
+}
+
+.pkz-joao #confianca .confianca-item p {
+  color: var(--texto-suave);
+  font-size: 0.82rem;
+}
+
+.pkz-joao #sobre .sobre-conteudo {
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  align-items: center;
+  gap: 64px;
+}
+
+.pkz-joao #sobre .sobre-foto {
+  min-height: 440px;
+}
+
+.pkz-joao #sobre .sobre-texto h2 {
+  margin-bottom: 20px;
+}
+
+.pkz-joao #sobre .sobre-texto > p:not(.etiqueta) {
+  margin-top: 14px;
+  color: var(--texto-suave);
+  font-size: 0.95rem;
+}
+
+.pkz-joao #sobre .sobre-texto blockquote {
+  margin-top: 24px;
+  padding: 20px 24px;
+  border-left: 4px solid var(--azul-pkz);
+  border-radius: 0 var(--raio) var(--raio) 0;
+  background: var(--lilas);
+  color: var(--azul-marinho);
+  font-weight: 600;
+}
+
+.pkz-joao #sobre .sobre-texto cite {
+  display: block;
+  margin-top: 10px;
+  color: var(--texto-suave);
+  font-size: 0.82rem;
+  font-style: normal;
+  font-weight: 500;
+}
+
+.pkz-joao #como-funciona .como-cabecalho {
+  margin-bottom: 36px;
+}
+
+.pkz-joao #como-funciona .como-cabecalho .subtitulo {
+  max-width: 620px;
+}
+
+.pkz-joao #como-funciona .etapas-grade {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 20px;
+  list-style: none;
+}
+
+.pkz-joao #como-funciona .etapa {
+  height: 100%;
+}
+
+.pkz-joao #como-funciona .etapa .numero {
+  display: block;
+  margin-bottom: 18px;
+  color: var(--azul-pkz);
+}
+
+.pkz-joao #como-funciona .etapa h3 {
+  margin-bottom: 10px;
+  color: var(--azul-marinho);
+  font-size: 1rem;
+}
+
+.pkz-joao #como-funciona .etapa p {
+  color: var(--texto-suave);
+  font-size: 0.85rem;
+}
+
+@media (max-width: 900px) {
+  .pkz-joao #hero .hero-conteudo,
+  .pkz-joao #sobre .sobre-conteudo {
+    gap: 32px;
+  }
+
+  .pkz-joao #confianca .confianca-grade,
+  .pkz-joao #como-funciona .etapas-grade {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .pkz-joao #confianca .confianca-item {
+    padding: 16px 20px;
+    border-right: 0;
+  }
+
+  .pkz-joao #confianca .confianca-item:nth-child(odd) {
+    padding-left: 0;
+  }
+
+  .pkz-joao #confianca .confianca-item:nth-child(even) {
+    padding-right: 0;
+  }
+}
+
+@media (max-width: 640px) {
+  .pkz-joao #hero {
+    padding: 64px 0;
+  }
+
+  .pkz-joao #hero .hero-conteudo,
+  .pkz-joao #sobre .sobre-conteudo,
+  .pkz-joao #confianca .confianca-grade,
+  .pkz-joao #como-funciona .etapas-grade {
+    grid-template-columns: 1fr;
+  }
+
+  .pkz-joao #hero .hero-conteudo,
+  .pkz-joao #sobre .sobre-conteudo {
+    gap: 28px;
+  }
+
+  .pkz-joao #hero .hero-foto {
+    min-height: 260px;
+  }
+
+  .pkz-joao #hero .hero-acoes {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .pkz-joao #hero .hero-acoes .botao {
+    text-align: center;
+  }
+
+  .pkz-joao #confianca .confianca-item,
+  .pkz-joao #confianca .confianca-item:first-child,
+  .pkz-joao #confianca .confianca-item:last-child {
+    padding: 16px 0;
+    border-right: 0;
+    border-bottom: 1px solid rgba(0, 0, 128, 0.16);
+  }
+
+  .pkz-joao #confianca .confianca-item:last-child {
+    border-bottom: 0;
+  }
+
+  .pkz-joao #sobre .sobre-foto {
+    min-height: 280px;
+  }
+}
