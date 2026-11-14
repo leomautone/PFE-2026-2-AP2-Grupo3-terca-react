@@ -1,9 +1,6 @@
-// One to One — Santiago
-// Página provisória criada na base. Santiago troca este conteúdo pela migração da página do vanilla.
 
 import { Link } from "react-router-dom";
 import "./OneToOne.css";
-
 import useTitulo from "../components/useTitulo.js";
 
 export default function OneToOne() {
@@ -23,9 +20,9 @@ export default function OneToOne() {
                 o que for.
               </p>
               <div className="hero-acoes">
-                <a href="agendamento.html" className="botao botao-claro">
+                <Link to="/agendamento" className="botao botao-claro">
                   Agendar meu treino
-                </a>
+                </Link>
                 <a href="#sobre" className="botao botao-claro">
                   Conhecer o estúdio ↓
                 </a>
@@ -44,7 +41,7 @@ export default function OneToOne() {
             </div>
             <img
               className="foto"
-              src="img/onetoone/hero-aluna.jpg"
+              src="/img/onetoone/hero-aluna.jpg"
               alt="Aluna em treino funcional com halteres"
               width={960}
               height={640}
@@ -52,8 +49,7 @@ export default function OneToOne() {
           </div>
         </div>
       </section>
-      {/* fim Hero */}
-      {/* Sobre nós — Santiago */}
+
       <section id="sobre" className="secao">
         <div className="container">
           <div className="grade-2">
@@ -80,7 +76,7 @@ export default function OneToOne() {
             </div>
             <img
               className="foto"
-              src="img/onetoone/estudio.jpg"
+              src="/img/onetoone/estudio.jpg"
               alt="Estúdio de treino com bicicletas e equipamentos"
               width={960}
               height={640}
@@ -90,8 +86,7 @@ export default function OneToOne() {
           </div>
         </div>
       </section>
-      {/* fim Sobre nós */}
-      {/* Modalidades — Santiago */}
+
       <section id="modalidades" className="secao secao-clara">
         <div className="container">
           <span className="etiqueta">O QUE VOCÊ PODE TREINAR</span>
@@ -104,7 +99,7 @@ export default function OneToOne() {
             <div className="card">
               <img
                 className="foto"
-                src="img/onetoone/forca.jpg"
+                src="/img/onetoone/forca.jpg"
                 alt="Aluno fazendo treino de força"
                 width={960}
                 height={640}
@@ -119,7 +114,7 @@ export default function OneToOne() {
             <div className="card">
               <img
                 className="foto"
-                src="img/onetoone/performance.jpg"
+                src="/img/onetoone/performance.jpg"
                 alt="Corredor em uma estrada"
                 width={960}
                 height={640}
@@ -135,7 +130,7 @@ export default function OneToOne() {
             <div className="card">
               <img
                 className="foto"
-                src="img/onetoone/condicionamento.jpg"
+                src="/img/onetoone/condicionamento.jpg"
                 alt="Aluna saltando durante treino ao ar livre"
                 width={960}
                 height={640}
@@ -150,7 +145,7 @@ export default function OneToOne() {
             <div className="card">
               <img
                 className="foto"
-                src="img/onetoone/pos-lesao.jpg"
+                src="/img/onetoone/pos-lesao.jpg"
                 alt="Aluna fazendo alongamento"
                 width={960}
                 height={639}
@@ -165,8 +160,7 @@ export default function OneToOne() {
           </div>
         </div>
       </section>
-      {/* fim Modalidades */}
-      {/* Diferenciais — Santiago */}
+
       <section id="diferenciais" className="secao secao-escura">
         <div className="container">
           <span className="etiqueta">POR QUE O ONE TO ONE</span>
@@ -191,8 +185,7 @@ export default function OneToOne() {
           </div>
         </div>
       </section>
-      {/* fim Diferenciais */}
-      {/* Avaliações de clientes — Santiago */}
+
       <section id="avaliacoes" className="secao">
         <div className="container">
           <span className="etiqueta">CLIENTES SATISFEITOS</span>
@@ -236,8 +229,7 @@ export default function OneToOne() {
           </p>
         </div>
       </section>
-      {/* fim Avaliações de clientes */}
-      {/* Unidades — Santiago */}
+
       <section id="unidades" className="secao secao-clara">
         <div className="container">
           <span className="etiqueta">ONDE ESTAMOS</span>
@@ -282,15 +274,14 @@ export default function OneToOne() {
           </div>
         </div>
       </section>
-      {/* fim Unidades */}
-      {/* Chamada para agendar — Santiago */}
+
       <section id="agendar" className="secao secao-onetoone">
         <div className="container">
           <h2>BORA TREINAR?</h2>
           <p>Escolha o dia no calendário e o horário que funciona para você.</p>
-          <a href="agendamento.html" className="botao botao-claro">
+          <Link to="/agendamento" className="botao botao-claro">
             Escolher dia no calendário →
-          </a>
+          </Link>
         </div>
       </section>
     </div>
