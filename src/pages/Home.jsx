@@ -1,5 +1,5 @@
 // Home — Pedro Henrique
-// Página provisória criada na base. Pedro Henrique troca este conteúdo pela migração da página do vanilla.
+// Hero, números das marcas e escolha entre PKZ e One to One (migrado do vanilla).
 
 import { Link } from "react-router-dom";
 import "./Home.css";
@@ -30,7 +30,7 @@ export default function Home() {
             </div>
           </div>
           <div className="foto hero-foto">
-            <img src="/img/index/hero-treino.jpg" alt="Treino em um dos estúdios" />
+            <img src="/img/index/hero-treino.jpg" alt="Atleta treinando com cordas navais ao ar livre" width="960" height="541" />
           </div>
         </div>
         <p className="hero-rolar">Role para escolher seu estúdio ↓</p>
