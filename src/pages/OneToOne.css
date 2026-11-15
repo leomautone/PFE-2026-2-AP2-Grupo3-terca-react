@@ -1,0 +1,183 @@
+
+.pagina-onetoone #hero .botao {
+  margin-right: 12px;
+  margin-bottom: 12px;
+}
+
+.pagina-onetoone #hero .subtitulo {
+  margin-bottom: 32px;
+}
+
+.pagina-onetoone #hero .grade-3 {
+  margin-top: 40px;
+}
+
+.pagina-onetoone #hero .hero-numeros {
+  gap: 24px;
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.pagina-onetoone #hero .hero-numeros .numero {
+  display: block;
+  margin-bottom: 6px;
+  color: var(--branco);
+}
+
+.pagina-onetoone #sobre h2,
+.pagina-onetoone #modalidades h2,
+.pagina-onetoone #diferenciais h2,
+.pagina-onetoone #avaliacoes h2 {
+  margin-top: 8px;
+  margin-bottom: 20px;
+}
+
+.pagina-onetoone #avaliacoes .card p {
+  margin-bottom: 16px;
+}
+
+.pagina-onetoone #avaliacoes .nota-geral {
+  flex-wrap: wrap;
+}
+
+.pagina-onetoone #avaliacoes .nota-geral p {
+  flex-basis: 100%;
+  color: var(--texto-suave);
+}
+
+.pagina-onetoone #unidades .card p {
+  margin-top: 8px;
+}
+
+.pagina-onetoone #sobre p {
+  margin-bottom: 16px;
+}
+
+.pagina-onetoone #sobre .pilula {
+  margin-right: 8px;
+  margin-bottom: 8px;
+  margin-top: 8px;
+}
+
+.pagina-onetoone #modalidades .card .foto {
+  margin-bottom: 20px;
+  min-height: 160px;
+  height: 180px;
+}
+
+.pagina-onetoone #modalidades .grade-4 {
+  margin-top: 40px;
+}
+
+.pagina-onetoone #diferenciais .grade-4 {
+  margin-top: 40px;
+}
+
+.pagina-onetoone #diferenciais .numero {
+  color: var(--branco);
+  margin-bottom: 16px;
+  display: block;
+}
+
+.pagina-onetoone #avaliacoes > .container > .etiqueta {
+  display: block;
+  text-align: center;
+}
+
+.pagina-onetoone #avaliacoes h2 {
+  text-align: center;
+}
+
+.pagina-onetoone #avaliacoes .nota-geral {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 16px;
+  margin-top: 10px;
+  margin-bottom: 8px;
+}
+
+.pagina-onetoone #avaliacoes .nota-geral .numero {
+  font-size: 3rem;
+  color: var(--azul-escuro);
+}
+
+.pagina-onetoone #avaliacoes .nota-geral .estrelas {
+  font-size: 1.8rem;
+}
+
+.pagina-onetoone #avaliacoes .grade-3 {
+  margin-top: 40px;
+  margin-bottom: 16px;
+}
+
+.pagina-onetoone #avaliacoes .card .estrelas {
+  display: block;
+  margin-bottom: 12px;
+  font-size: 1.3rem;
+}
+
+.pagina-onetoone #avaliacoes .card strong {
+  display: block;
+  margin-top: 16px;
+  margin-bottom: 8px;
+  color: var(--azul-escuro);
+}
+
+.pagina-onetoone #unidades h2 {
+  margin-bottom: 40px;
+}
+
+.pagina-onetoone #unidades .card .mapa {
+  display: block;
+  width: 100%;
+  height: 240px;
+  border: 0;
+  border-radius: var(--raio);
+  margin-bottom: 24px;
+}
+
+.pagina-onetoone #unidades .card .botao {
+  margin-top: 24px;
+}
+
+.pagina-onetoone #agendar .container {
+  text-align: center;
+}
+
+.pagina-onetoone #agendar p {
+  color: rgba(255, 255, 255, 0.85);
+  margin: 16px auto 32px auto;
+  max-width: 600px;
+}
+
+@media (max-width: 800px) {
+  .pagina-onetoone #hero .grade-2,
+  .pagina-onetoone #sobre .grade-2 {
+    gap: 40px;
+  }
+
+  .pagina-onetoone #hero .hero-numeros {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+  }
+
+  .pagina-onetoone #diferenciais .grade-4 {
+    gap: 32px;
+  }
+}
+
+@media (max-width: 640px) {
+  .pagina-onetoone #hero .hero-acoes {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 12px;
+  }
+
+  .pagina-onetoone #hero .hero-acoes .botao {
+    margin: 0;
+    text-align: center;
+  }
+}
