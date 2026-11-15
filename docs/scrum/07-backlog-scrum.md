@@ -141,12 +141,12 @@ O Scrum Master sobe a base do projeto primeiro. As branches dos integrantes só 
 |---|---|---|---|---|
 | R01 | Criar o projeto React, rotas das páginas e publicação no Vercel | Leonardo Camero | estrutura do projeto, `vercel.json` | Em andamento: projeto e rotas prontos (PR #6); falta publicar no Vercel |
 | R02 | Base visual em componentes: header, footer, botões, menu hambúrguer e CSS base; revisão e merge | Leonardo Camero | `src/components/`, CSS base | Concluído (07/11/2026, PR #6) |
-| R03 | Home: hero, números das marcas e escolha PKZ / One to One | Pedro Henrique Godoy | `src/pages/Home.jsx` e CSS da página | Concluído (08/11/2026); pequenos ajustes pendentes |
-| R04 | PKZ: hero, faixa de confiança, sobre nós, como funciona | João Duarte | componentes das seções do João | A fazer |
-| R05 | PKZ: prévia do relatório, cuidado e segurança, depoimentos, perguntas frequentes, chamada para agendar | Kaue Reis | componentes das seções do Kaue | A fazer |
-| R06 | One to One: hero, sobre nós, modalidades, diferenciais, avaliações, unidades, chamada para agendar | Santiago Alejo | `src/pages/OneToOne.jsx` e CSS da página | A fazer |
-| R07 | Agendamento: calendário com filtro e disponibilidade, modal com validação | David Madureira | `src/pages/Agendamento.jsx` e CSS da página | A fazer |
-| R08 | Confirmado: resumo do agendamento e aviso pelo WhatsApp | Arthur Aires | `src/pages/Confirmado.jsx` e CSS da página | Em revisão (PR #7) |
+| R03 | Home: hero, números das marcas e escolha PKZ / One to One | Pedro Henrique Godoy | `src/pages/Home.jsx` e CSS da página | Concluído (08/11/2026); ajustes do celular feitos na revisão (PR #9, merge em 15/11/2026) |
+| R04 | PKZ: hero, faixa de confiança, sobre nós, como funciona | João Duarte | componentes das seções do João | Concluído (13/11/2026); textos ajustados na revisão (PR #13) |
+| R05 | PKZ: prévia do relatório, cuidado e segurança, depoimentos, perguntas frequentes, chamada para agendar | Kaue Reis | componentes das seções do Kaue | Concluído (13/11/2026, PR #10, merge em 15/11/2026) |
+| R06 | One to One: hero, sobre nós, modalidades, diferenciais, avaliações, unidades, chamada para agendar | Santiago Alejo | `src/pages/OneToOne.jsx` e CSS da página | Concluído (14/11/2026, PR #11, merge em 15/11/2026) |
+| R07 | Agendamento: calendário com filtro e disponibilidade, modal com validação | David Madureira | `src/pages/Agendamento.jsx` e CSS da página | Concluído (15/11/2026, PR #12, merge em 15/11/2026) |
+| R08 | Confirmado: resumo do agendamento e aviso pelo WhatsApp | Arthur Aires | `src/pages/Confirmado.jsx` e CSS da página | Concluído (10/11/2026, PR #7, merge em 15/11/2026) |
 | R09 | Integrar o agendamento ao back-end | — | — | Cancelada (12/11/2026): o site não terá back-end |
 
 **Pendências e ajustes finais**
@@ -166,3 +166,7 @@ O Scrum Master sobe a base do projeto primeiro. As branches dos integrantes só 
 - 08/11/2026: entrega do Pedro (Home), enviada direto na `main`, sem PR.
 - 10/11/2026: entrega do Arthur (confirmação, PR #7).
 - 12/11/2026: definido que o site React não terá back-end; o agendamento fica com horários simulados.
+- 13/11/2026: entrega do João (PKZ, primeira metade), enviada direto na `main`, sem PR.
+- 13/11/2026 e 14/11/2026: entregas do Kaue (PKZ, segunda metade, PR #10) e do Santiago (One to One, PR #11).
+- 15/11/2026: entrega do David (agendamento com horários simulados, PR #12).
+- 15/11/2026: revisão e merge de todas as entregas (PRs #7 a #12); ajuste de texto da parte do João (PR #13). Todas as páginas do React migradas. Reforçado com o grupo que as entregas vão por branch e PR, não direto na `main`.
