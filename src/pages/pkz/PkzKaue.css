@@ -1,0 +1,245 @@
+/* PKZ — parte do Kaue (relatório, cuidado, depoimentos, perguntas, agendar) */
+/* toda regra começa com .pkz-kaue para não afetar as outras páginas */
+
+/* ---------- Prévia do relatório ---------- */
+.pkz-kaue #relatorio .grade-2 {
+  align-items: center;
+  gap: 48px;
+}
+
+.pkz-kaue #relatorio .relatorio-lista {
+  margin-top: 28px;
+}
+
+.pkz-kaue #relatorio .relatorio-lista li {
+  position: relative;
+  padding-left: 18px;
+  margin-bottom: 10px;
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.85);
+}
+
+/* bolinha antes de cada item */
+.pkz-kaue #relatorio .relatorio-lista li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.55em;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--branco);
+}
+
+.pkz-kaue #relatorio .relatorio-card {
+  color: var(--texto);
+}
+
+.pkz-kaue #relatorio .relatorio-topo {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.pkz-kaue #relatorio .relatorio-topo h3 {
+  font-size: 1.1rem;
+  margin-bottom: 2px;
+}
+
+.pkz-kaue #relatorio .relatorio-topo p {
+  font-size: 0.75rem;
+}
+
+.pkz-kaue #relatorio .relatorio-selo {
+  flex-shrink: 0;
+  padding: 6px 12px;
+  border-radius: 999px;
+  background: var(--verde);
+  color: var(--branco);
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.pkz-kaue #relatorio .relatorio-item {
+  margin-bottom: 16px;
+}
+
+.pkz-kaue #relatorio .relatorio-legenda {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--azul-escuro);
+  margin-bottom: 6px;
+}
+
+.pkz-kaue #relatorio .relatorio-melhora {
+  color: var(--verde);
+}
+
+/* fundo da barra */
+.pkz-kaue #relatorio .relatorio-barra {
+  height: 8px;
+  border-radius: 999px;
+  background: var(--lilas);
+  overflow: hidden;
+}
+
+/* parte preenchida (a largura fica no HTML) */
+.pkz-kaue #relatorio .relatorio-barra div {
+  height: 100%;
+  border-radius: 999px;
+  background: var(--azul-pkz);
+}
+
+.pkz-kaue #relatorio .relatorio-recado {
+  margin-top: 20px;
+  padding: 14px 16px;
+  border-radius: 12px;
+  background: var(--lilas);
+}
+
+.pkz-kaue #relatorio .relatorio-recado strong {
+  display: block;
+  font-size: 0.75rem;
+  color: var(--azul-pkz);
+  margin-bottom: 4px;
+}
+
+.pkz-kaue #relatorio .relatorio-recado p {
+  font-size: 0.8rem;
+  color: var(--texto);
+}
+
+.pkz-kaue #relatorio .relatorio-aviso {
+  margin-top: 12px;
+  font-size: 0.75rem;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+/* ---------- Cuidado e segurança ---------- */
+.pkz-kaue #cuidado .cuidado-cards {
+  margin-top: 40px;
+}
+
+/* cards claros, sem borda e sem sombra */
+.pkz-kaue #cuidado .card {
+  background: var(--fundo-claro);
+  border: none;
+  box-shadow: none;
+}
+
+/* bolinha com o ícone no meio */
+.pkz-kaue #cuidado .cuidado-icone {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  font-size: 1.1rem;
+  border-radius: 50%;
+  background: var(--lilas);
+  border: 1px solid #d2d4f7;
+  margin-bottom: 16px;
+}
+
+/* ---------- Depoimentos de pais ---------- */
+.pkz-kaue #depoimentos .depoimentos-titulo {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.pkz-kaue #depoimentos .card {
+  border: none;
+}
+
+.pkz-kaue #depoimentos .depoimentos-destaque {
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 12px 0 16px;
+  font-size: 0.75rem;
+  color: var(--texto-suave);
+}
+
+.pkz-kaue #depoimentos .depoimentos-destaque .numero {
+  font-size: 1.8rem;
+  color: var(--azul-pkz);
+}
+
+.pkz-kaue #depoimentos .card .depoimentos-texto {
+  font-size: 0.9rem;
+  color: var(--texto);
+  margin-bottom: 16px;
+}
+
+.pkz-kaue #depoimentos .card .depoimentos-autor {
+  font-size: 0.75rem;
+}
+
+.pkz-kaue #depoimentos .depoimentos-aviso {
+  margin-top: 28px;
+  text-align: center;
+  font-size: 0.75rem;
+  color: var(--texto-suave);
+}
+
+/* ---------- Perguntas frequentes ---------- */
+.pkz-kaue #faq .faq-lista {
+  margin-top: 40px;
+  align-items: start;
+}
+
+.pkz-kaue #faq .card {
+  box-shadow: none;
+}
+
+.pkz-kaue #faq summary {
+  position: relative;
+  padding-right: 28px;
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--azul-escuro);
+  cursor: pointer;
+  list-style: none;
+}
+
+/* tira a setinha padrão do navegador */
+.pkz-kaue #faq summary::-webkit-details-marker {
+  display: none;
+}
+
+/* sinal de + que vira − quando abre */
+.pkz-kaue #faq summary::after {
+  content: "+";
+  position: absolute;
+  right: 0;
+  top: -2px;
+  font-size: 1.2rem;
+  color: var(--azul-pkz);
+}
+
+.pkz-kaue #faq details[open] summary::after {
+  content: "−";
+}
+
+.pkz-kaue #faq details p {
+  margin-top: 10px;
+}
+
+/* ---------- Chamada para agendar ---------- */
+.pkz-kaue #agendar {
+  text-align: center;
+}
+
+.pkz-kaue #agendar .subtitulo {
+  max-width: none;
+  margin: 16px auto 28px;
+  color: rgba(255, 255, 255, 0.9);
+}
