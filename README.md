@@ -20,7 +20,7 @@ O cliente é a **PKZ / One to One**, formada por dois estúdios de treinamento e
 
 - Site institucional com Home, página PKZ, página One to One e agendamento de aula experimental.
 - **Sem** cadastro, **sem** login e **sem** cards ou dados de treino de atletas.
-- A única integração com back-end é o **agendamento de aula experimental**.
+- **Sem back-end:** o agendamento de aula experimental funciona só no front-end, com horários simulados.
 - As telas 07 (perfil do aluno) e 08 (relatório para os pais) do protótipo ficaram **fora do escopo da AP2**, porque dependem de login e de dados do back-end.
 
 ### Entregas
@@ -28,7 +28,7 @@ O cliente é a **PKZ / One to One**, formada por dois estúdios de treinamento e
 | Entrega | Tecnologia | Publicação | Repositório |
 |---|---|---|---|
 | Site vanilla | HTML, CSS e JS puro (agendamento só visual) | GitHub Pages | [PFE-2026-2-AP2-Grupo3-terca-vanilla](https://github.com/leomautone/PFE-2026-2-AP2-Grupo3-terca-vanilla) |
-| Site React (AP2) | React (agendamento integrado ao back-end) | Vercel | este repositório |
+| Site React (AP2) | React (agendamento com horários simulados) | Vercel | este repositório |
 
 O site vanilla está pronto. Este repositório tem a base do site React (criada com Vite) e a documentação.
 
