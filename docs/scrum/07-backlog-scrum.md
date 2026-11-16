@@ -139,7 +139,7 @@ O Scrum Master sobe a base do projeto primeiro. As branches dos integrantes só 
 
 | ID | Tarefa | Responsável | Arquivos | Status |
 |---|---|---|---|---|
-| R01 | Criar o projeto React, rotas das páginas e publicação no Vercel | Leonardo Camero | estrutura do projeto, `vercel.json` | Em andamento: projeto e rotas prontos (PR #6); falta publicar no Vercel |
+| R01 | Criar o projeto React, rotas das páginas e publicação no Vercel | Leonardo Camero | estrutura do projeto, `vercel.json` | Concluído (16/11/2026): site publicado no Vercel (https://pfe-2026-2-ap-2-grupo3-terca-react.vercel.app); atualiza a cada merge na `main` |
 | R02 | Base visual em componentes: header, footer, botões, menu hambúrguer e CSS base; revisão e merge | Leonardo Camero | `src/components/`, CSS base | Concluído (07/11/2026, PR #6) |
 | R03 | Home: hero, números das marcas e escolha PKZ / One to One | Pedro Henrique Godoy | `src/pages/Home.jsx` e CSS da página | Concluído (08/11/2026); ajustes do celular feitos na revisão (PR #9, merge em 15/11/2026) |
 | R04 | PKZ: hero, faixa de confiança, sobre nós, como funciona | João Duarte | componentes das seções do João | Concluído (13/11/2026); textos ajustados na revisão (PR #13) |
@@ -170,3 +170,4 @@ O Scrum Master sobe a base do projeto primeiro. As branches dos integrantes só 
 - 13/11/2026 e 14/11/2026: entregas do Kaue (PKZ, segunda metade, PR #10) e do Santiago (One to One, PR #11).
 - 15/11/2026: entrega do David (agendamento com horários simulados, PR #12).
 - 15/11/2026: revisão e merge de todas as entregas (PRs #7 a #12); ajuste de texto da parte do João (PR #13). Todas as páginas do React migradas. Reforçado com o grupo que as entregas vão por branch e PR, não direto na `main`.
+- 16/11/2026: calendário do agendamento ajustado para o celular (PR #14) e site React publicado no Vercel (https://pfe-2026-2-ap-2-grupo3-terca-react.vercel.app), seguindo o guia de deploy do professor. Rotas testadas com acesso direto (F5) sem erro 404.
