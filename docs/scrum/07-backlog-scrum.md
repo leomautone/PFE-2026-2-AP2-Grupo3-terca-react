@@ -154,7 +154,7 @@ O Scrum Master sobe a base do projeto primeiro. As branches dos integrantes só 
 | ID | Item | Responsável | Status |
 |---|---|---|---|
 | A01 | Definir o back-end do agendamento: API do professor ou do próprio grupo. O site começa sem back-end. | Leonardo Camero (com o professor) | Resolvido (12/11/2026): sem back-end; o agendamento fica com horários simulados |
-| A02 | Calendário do agendamento no celular: em telas pequenas ficam colunas demais e o layout precisa mudar | Leonardo Camero | Ajuste final |
+| A02 | Calendário do agendamento no celular: em telas pequenas ficam colunas demais e o layout precisa mudar | Leonardo Camero | Concluído (16/11/2026): no celular cada dia mostra só o número e a cor da disponibilidade; o texto fica na legenda |
 | A03 | Confirmar com o cliente o campo "Estúdio" no agendamento (sugestão do grupo desde o protótipo) | Leonardo Camero | Em aberto |
 | A04 | Trocar as fotos provisórias (CC0) pelas fotos oficiais quando o cliente enviar | Leonardo Camero | Aguardando cliente |
 
