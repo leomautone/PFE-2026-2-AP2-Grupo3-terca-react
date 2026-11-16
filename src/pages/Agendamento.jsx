@@ -380,7 +380,7 @@ export default function Agendamento() {
                           className={`status-ponto ${status.classe}`}
                           aria-hidden="true"
                         />
-                        <span>{status.texto}</span>
+                        <span className="status-texto">{status.texto}</span>
                       </span>
                     </button>
                   );

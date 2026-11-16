@@ -577,19 +577,31 @@
     font-size: 0.58rem;
   }
 
+  /* No celular cada dia mostra só o número e a cor; o texto fica na legenda e no aria-label */
   .pagina-agendamento .dia-calendario {
-    min-height: 72px;
-    padding: 7px 1px 5px;
+    min-height: 54px;
+    justify-content: center;
+    gap: 6px;
+    padding: 6px 1px;
   }
 
   .pagina-agendamento .dia-vazio {
-    min-height: 72px;
+    min-height: 54px;
   }
 
-  .pagina-agendamento .dia-status {
-    flex-direction: column;
-    gap: 2px;
-    font-size: 0.52rem;
+  .pagina-agendamento .dia-numero {
+    font-size: 0.95rem;
+  }
+
+  .pagina-agendamento .dia-hoje,
+  .pagina-agendamento .status-texto {
+    display: none;
+  }
+
+  .pagina-agendamento .status-ponto {
+    width: 10px;
+    height: 10px;
+    flex-basis: 10px;
   }
 
   .pagina-agendamento .agenda-lateral {
@@ -643,10 +655,5 @@
 @media (max-width: 360px) {
   .pagina-agendamento .calendario-card {
     padding: 20px 8px;
-  }
-
-  .pagina-agendamento .dia-status {
-    font-size: 0.48rem;
-    overflow-wrap: normal;
   }
 }
