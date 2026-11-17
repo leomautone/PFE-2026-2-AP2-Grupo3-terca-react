@@ -9,8 +9,8 @@ export default function Footer() {
         <div className="footer-colunas">
           <div>
             <Link to="/" className="logo">
-              <img src="/img/logo-pkz.png" alt="PKZ" />
-              <span>ONE TO ONE</span>
+              <img src="/img/logos/playmakerz.svg" alt="Playmakerz (PKZ)" className="logo-pkz" />
+              <img src="/img/logos/one-to-one-branco.svg" alt="One to One Studio" className="logo-onetoone" />
             </Link>
             <p>Treinamento esportivo e personal training</p>
             <p>Barra da Tijuca · Rio de Janeiro</p>

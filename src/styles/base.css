@@ -311,37 +311,37 @@ img.foto {
   height: 72px;
 }
 
-/* logo oficial da PKZ + "ONE TO ONE" em texto (o One to One ainda não tem logo próprio) */
+/* logos oficiais enviados pelo cliente: Playmakerz (PKZ) + One to One Studio */
 .logo {
   display: inline-flex;
   align-items: center;
-  font-family: var(--fonte-titulo);
-  font-size: 1.3rem;
-  font-weight: 700;
+  gap: 10px;
   white-space: nowrap;
 }
 
-.logo span {
-  font-weight: 500;
-  font-size: 1.05rem;
-  margin-left: 8px;
+.logo img {
+  width: auto;
+}
+
+.logo .logo-pkz {
+  height: 28px;
+}
+
+/* a linha separa as duas marcas, como o traço que havia antes */
+.logo .logo-onetoone {
+  height: 32px;
   padding-left: 10px;
   border-left: 2px solid currentColor;
 }
 
-.logo img {
-  height: 32px;
-  width: auto;
-}
-
-/* em fundo escuro o logo fica branco */
-.header .logo img,
-.footer .logo img {
+/* em fundo escuro o logo da PKZ fica branco (o One to One já tem versão branca oficial) */
+.header .logo .logo-pkz,
+.footer .logo .logo-pkz {
   filter: brightness(0) invert(1);
 }
 
 /* no header claro ele volta para o azul original */
-.header-claro .logo img {
+.header-claro .logo .logo-pkz {
   filter: none;
 }
 
@@ -498,6 +498,19 @@ img.foto {
     padding: 8px 12px;
     white-space: nowrap;
   }
+
+  .header .logo {
+    gap: 8px;
+  }
+
+  .header .logo .logo-pkz {
+    height: 20px;
+  }
+
+  .header .logo .logo-onetoone {
+    height: 23px;
+    padding-left: 8px;
+  }
 }
 
 /* celular bem estreito (320px): logo menor pra caber logo + botão + ☰ */
@@ -510,13 +523,16 @@ img.foto {
     gap: 8px;
   }
 
-  .header .logo img {
-    height: 26px;
+  .header .logo {
+    gap: 6px;
   }
 
-  .header .logo span {
-    font-size: 0.9rem;
-    margin-left: 6px;
-    padding-left: 8px;
+  .header .logo .logo-pkz {
+    height: 16px;
+  }
+
+  .header .logo .logo-onetoone {
+    height: 19px;
+    padding-left: 6px;
   }
 }
