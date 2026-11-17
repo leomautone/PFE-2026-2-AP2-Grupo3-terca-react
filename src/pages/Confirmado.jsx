@@ -29,6 +29,8 @@ export default function Confirmado() {
   // Os exemplos e as validações são os mesmos da página vanilla.
   const nome = params.get("nome")?.trim() || "Lucas Andrade";
   const telefone = params.get("telefone")?.trim() || "(21) 98888-7777";
+  const tipoInformado = params.get("tipo")?.trim();
+  const tipo = ["Aula experimental", "Fisioterapia", "Avaliação"].includes(tipoInformado) ? tipoInformado : "Aula experimental";
   const estudio = unidades.get(params.get("estudio")?.trim()) || "PKZ · Barra da Tijuca";
   const horarioInformado = params.get("horario")?.trim() || "";
   const horario = /^([01]\d|2[0-3]):[0-5]\d$/.test(horarioInformado) ? horarioInformado : "18:00";
@@ -54,6 +56,10 @@ export default function Confirmado() {
               <div>
                 <dt>Horário</dt>
                 <dd id="resumo-horario">{horario}</dd>
+              </div>
+              <div>
+                <dt>Atendimento</dt>
+                <dd id="resumo-tipo">{tipo}</dd>
               </div>
               <div>
                 <dt>Estúdio</dt>

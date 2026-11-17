@@ -174,3 +174,4 @@ O Scrum Master sobe a base do projeto primeiro. As branches dos integrantes só 
 - 16/11/2026: calendário do agendamento ajustado para o celular (PR #14) e site React publicado no Vercel (https://pfe-2026-2-ap-2-grupo3-terca-react.vercel.app), seguindo o guia de deploy do professor. Rotas testadas com acesso direto (F5) sem erro 404.
 - 16/11/2026: logos oficiais enviados pelo cliente (Playmakerz e One to One Studio) aplicados no header e no footer, em SVG, no lugar do "PKZ" em PNG e do "ONE TO ONE" em texto.
 - 17/11/2026: pedido do cliente: página de fisioterapia (`/fisioterapia`), ligada às duas empresas. Entra por um card na Home, abaixo de PKZ e One to One, sem mudar o menu. Textos provisórios.
+- 17/11/2026: agendamento com campo "Atendimento" (aula experimental, fisioterapia ou avaliação). Os botões da página de fisioterapia já abrem o agendamento com fisioterapia marcada, e a confirmação mostra o tipo escolhido.
