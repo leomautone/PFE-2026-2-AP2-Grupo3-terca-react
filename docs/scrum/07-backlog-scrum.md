@@ -157,6 +157,7 @@ O Scrum Master sobe a base do projeto primeiro. As branches dos integrantes só 
 | A02 | Calendário do agendamento no celular: em telas pequenas ficam colunas demais e o layout precisa mudar | Leonardo Camero | Concluído (16/11/2026): no celular cada dia mostra só o número e a cor da disponibilidade; o texto fica na legenda |
 | A03 | Confirmar com o cliente o campo "Estúdio" no agendamento (sugestão do grupo desde o protótipo) | Leonardo Camero | Em aberto |
 | A04 | Trocar as fotos provisórias (CC0) pelas fotos oficiais quando o cliente enviar | Leonardo Camero | Aguardando cliente |
+| A05 | Página de fisioterapia ligada à PKZ e ao One to One, com card na Home e sem item novo no menu | Leonardo Camero | Primeira versão feita (17/11/2026); textos a confirmar com o cliente |
 
 **Registro do Scrum Master**
 
@@ -172,3 +173,4 @@ O Scrum Master sobe a base do projeto primeiro. As branches dos integrantes só 
 - 15/11/2026: revisão e merge de todas as entregas (PRs #7 a #12); ajuste de texto da parte do João (PR #13). Todas as páginas do React migradas. Reforçado com o grupo que as entregas vão por branch e PR, não direto na `main`.
 - 16/11/2026: calendário do agendamento ajustado para o celular (PR #14) e site React publicado no Vercel (https://pfe-2026-2-ap-2-grupo3-terca-react.vercel.app), seguindo o guia de deploy do professor. Rotas testadas com acesso direto (F5) sem erro 404.
 - 16/11/2026: logos oficiais enviados pelo cliente (Playmakerz e One to One Studio) aplicados no header e no footer, em SVG, no lugar do "PKZ" em PNG e do "ONE TO ONE" em texto.
+- 17/11/2026: pedido do cliente: página de fisioterapia (`/fisioterapia`), ligada às duas empresas. Entra por um card na Home, abaixo de PKZ e One to One, sem mudar o menu. Textos provisórios.

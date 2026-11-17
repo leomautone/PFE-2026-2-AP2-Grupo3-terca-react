@@ -1,0 +1,57 @@
+/* src/pages/Fisioterapia.css — Leonardo
+   Toda regra começa com .pagina-fisio (o CSS de todas as páginas fica carregado junto). */
+
+.pagina-fisio .grade-2 {
+  align-items: center;
+}
+
+.pagina-fisio h2 {
+  margin-top: 8px;
+  margin-bottom: 20px;
+}
+
+.pagina-fisio #hero .subtitulo {
+  margin-bottom: 32px;
+}
+
+.pagina-fisio .fisio-acoes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.pagina-fisio #como-funciona .grade-3 {
+  margin-top: 32px;
+}
+
+.pagina-fisio .card .numero {
+  display: block;
+  color: var(--azul-pkz);
+  margin-bottom: 12px;
+}
+
+.pagina-fisio #estudios .grade-2 {
+  align-items: stretch;
+}
+
+.pagina-fisio #estudios .card h3 {
+  margin-top: 12px;
+}
+
+.pagina-fisio #estudios .card .botao {
+  margin-top: 20px;
+}
+
+.pagina-fisio #agendar p {
+  margin: 8px 0 24px;
+}
+
+@media (max-width: 640px) {
+  .pagina-fisio .fisio-acoes {
+    flex-direction: column;
+  }
+
+  .pagina-fisio .fisio-acoes .botao {
+    text-align: center;
+  }
+}
