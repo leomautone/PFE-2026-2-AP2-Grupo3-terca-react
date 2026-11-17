@@ -51,8 +51,12 @@ export default function Header({ claro = false }) {
     <header className={classes}>
       <div className="container header-conteudo">
         <Link to="/" className="logo">
-          <img src="/img/logo-pkz.png" alt="PKZ" />
-          <span>ONE TO ONE</span>
+          <img src="/img/logos/playmakerz.svg" alt="Playmakerz (PKZ)" className="logo-pkz" />
+          <img
+            src={claro ? "/img/logos/one-to-one.svg" : "/img/logos/one-to-one-branco.svg"}
+            alt="One to One Studio"
+            className="logo-onetoone"
+          />
         </Link>
 
         <button
