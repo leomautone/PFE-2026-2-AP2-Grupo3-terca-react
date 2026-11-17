@@ -12,6 +12,9 @@ export const horarios = [
 
 export const estudios = ["PKZ", "One to One"];
 
+// tipo de atendimento: a fisioterapia atende alunos dos dois estúdios
+export const tipos = ["Aula experimental", "Fisioterapia", "Avaliação"];
+
 export function obterVagas(data, estudio) {
   if (data.getDay() === 0) return 0;
 

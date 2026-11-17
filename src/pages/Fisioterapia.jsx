@@ -22,7 +22,7 @@ export default function Fisioterapia() {
                 lesões, reabilitação e retorno seguro ao esporte.
               </p>
               <div className="fisio-acoes">
-                <Link to="/agendamento" className="botao botao-claro">
+                <Link to="/agendamento?tipo=Fisioterapia" className="botao botao-claro">
                   Agendar avaliação
                 </Link>
                 <a href="#como-funciona" className="botao botao-claro">
@@ -112,7 +112,7 @@ export default function Fisioterapia() {
         <div className="container">
           <h2>SENTIU ALGUMA DOR?</h2>
           <p>Agende uma avaliação e a gente monta o plano com você.</p>
-          <Link to="/agendamento" className="botao botao-claro">
+          <Link to="/agendamento?tipo=Fisioterapia" className="botao botao-claro">
             Escolher dia no calendário →
           </Link>
         </div>

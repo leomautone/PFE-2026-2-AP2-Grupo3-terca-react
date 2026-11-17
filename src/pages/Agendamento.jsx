@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useSearchParams } from "react-router-dom";
 import useTitulo from "../components/useTitulo.js";
-import { horarios, estudios, obterVagas } from "./dadosAgendamento.js";
+import { horarios, estudios, tipos, obterVagas } from "./dadosAgendamento.js";
 import "./Agendamento.css";
 
 const filtros = ["Todos", ...estudios];
@@ -61,6 +61,11 @@ export default function Agendamento() {
     return new Date(hoje.getFullYear(), hoje.getMonth(), 1);
   });
   const [filtro, setFiltro] = useState("Todos");
+  // a página de fisioterapia abre o agendamento com ?tipo=Fisioterapia
+  const [params] = useSearchParams();
+  const [tipo, setTipo] = useState(() =>
+    tipos.includes(params.get("tipo")) ? params.get("tipo") : tipos[0],
+  );
   const [dataSelecionada, setDataSelecionada] = useState(null);
   const [estudio, setEstudio] = useState("");
   const [horario, setHorario] = useState("");
@@ -256,6 +261,7 @@ export default function Agendamento() {
     const parametros = new URLSearchParams({
       nome: nomeLimpo,
       telefone: telefoneLimpo,
+      tipo,
       estudio,
       dia,
       horario,
@@ -277,7 +283,7 @@ export default function Agendamento() {
               className="calendario-card"
               aria-labelledby="titulo-calendario"
             >
-              <p className="etiqueta">Aula experimental</p>
+              <p className="etiqueta">Aula experimental, fisioterapia ou avaliação</p>
               <h1 id="titulo-calendario">Agende seu treino</h1>
               <p className="calendario-intro">
                 Clique em um dia disponível para escolher o horário.
@@ -486,7 +492,7 @@ export default function Agendamento() {
             >
               ×
             </button>
-            <p className="etiqueta">Reserve sua aula</p>
+            <p className="etiqueta">Reserve seu horário</p>
             <h2 id="titulo-modal">
               {formatarData(dataSelecionada, {
                 weekday: "long",
@@ -554,6 +560,23 @@ export default function Agendamento() {
                   {erros.telefone}
                 </span>
               </div>
+
+              <fieldset className="campo-formulario campo-opcoes">
+                <legend>Atendimento</legend>
+                <div className="opcoes-estudio">
+                  {tipos.map((opcao) => (
+                    <button
+                      key={opcao}
+                      className={`opcao-estudio${tipo === opcao ? " ativo" : ""}`}
+                      type="button"
+                      aria-pressed={tipo === opcao}
+                      onClick={() => setTipo(opcao)}
+                    >
+                      {opcao}
+                    </button>
+                  ))}
+                </div>
+              </fieldset>
 
               <fieldset
                 className={`campo-formulario campo-opcoes${erros.estudio ? " campo-invalido" : ""}`}
