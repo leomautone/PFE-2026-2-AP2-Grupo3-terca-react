@@ -107,6 +107,21 @@ export default function Home() {
               <p className="estudio-frase">Seu treino, seu ritmo.</p>
             </article>
           </div>
+
+          {/* Fisioterapia: serviço ligado aos dois estúdios (não é uma terceira empresa) */}
+          <article className="fisio-card">
+            <div>
+              <p className="etiqueta">Para alunos da PKZ e do One to One</p>
+              <h3>FISIOTERAPIA</h3>
+              <p>
+                Prevenção de lesões, reabilitação e retorno seguro ao treino, com o
+                fisioterapeuta e o professor trabalhando juntos.
+              </p>
+            </div>
+            <Link to="/fisioterapia" className="botao botao-escuro">
+              Conhecer a fisioterapia →
+            </Link>
+          </article>
         </div>
       </section>
     </div>

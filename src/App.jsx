@@ -6,6 +6,7 @@ import Layout from "./components/Layout.jsx";
 import Home from "./pages/Home.jsx";
 import Pkz from "./pages/pkz/Pkz.jsx";
 import OneToOne from "./pages/OneToOne.jsx";
+import Fisioterapia from "./pages/Fisioterapia.jsx";
 import Agendamento from "./pages/Agendamento.jsx";
 import Confirmado from "./pages/Confirmado.jsx";
 import NaoEncontrada from "./pages/NaoEncontrada.jsx";
@@ -17,6 +18,7 @@ export default function App() {
         <Route path="/" element={<Home />} />
         <Route path="/pkz" element={<Pkz />} />
         <Route path="/onetoone" element={<OneToOne />} />
+        <Route path="/fisioterapia" element={<Fisioterapia />} />
         <Route path="/agendamento" element={<Agendamento />} />
         <Route path="/confirmado" element={<Confirmado />} />
         <Route path="*" element={<NaoEncontrada />} />
