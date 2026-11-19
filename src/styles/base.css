@@ -276,6 +276,16 @@ img.foto {
 }
 
 /* sobre fundo escuro: botão branco com texto azul */
+/* botão da hero um pouco maior no computador */
+@media (min-width: 801px) {
+  .hero-botoes .botao,
+  .hero-acoes .botao,
+  .fisio-acoes .botao {
+    padding: 15px 30px;
+    font-size: 1rem;
+  }
+}
+
 .botao-claro {
   background: var(--branco);
   color: var(--azul-marinho);

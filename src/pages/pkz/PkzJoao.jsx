@@ -14,7 +14,7 @@ export default function PkzJoao() {
               Preparação física para jovens atletas com avaliação completa, treino planejado mês a mês e um relatório visual que você entende em um minuto.
             </p>
             <div className="hero-acoes">
-              <Link className="botao botao-claro" to="/agendamento">Agendar avaliação do meu filho</Link>
+              <Link className="botao botao-claro" to="/agendamento">Agendar avaliação</Link>
             </div>
           </div>
           <img
