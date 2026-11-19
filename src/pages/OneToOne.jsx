@@ -23,9 +23,6 @@ export default function OneToOne() {
                 <Link to="/agendamento" className="botao botao-claro">
                   Agendar meu treino
                 </Link>
-                <a href="#sobre" className="botao botao-claro">
-                  Conhecer o estúdio ↓
-                </a>
               </div>
               <div className="grade-3 hero-numeros">
                 <div>

@@ -15,7 +15,6 @@ export default function PkzJoao() {
             </p>
             <div className="hero-acoes">
               <Link className="botao botao-claro" to="/agendamento">Agendar avaliação do meu filho</Link>
-              <a className="botao botao-claro" href="#como-funciona">Ver como acompanhamos ↓</a>
             </div>
           </div>
           <img

@@ -157,7 +157,7 @@ O Scrum Master sobe a base do projeto primeiro. As branches dos integrantes só 
 | A02 | Calendário do agendamento no celular: em telas pequenas ficam colunas demais e o layout precisa mudar | Leonardo Camero | Concluído (16/11/2026): no celular cada dia mostra só o número e a cor da disponibilidade; o texto fica na legenda |
 | A03 | Confirmar com o cliente o campo "Estúdio" no agendamento (sugestão do grupo desde o protótipo) | Leonardo Camero | Em aberto |
 | A04 | Trocar as fotos provisórias (CC0) pelas fotos oficiais quando o cliente enviar | Leonardo Camero | Aguardando cliente |
-| A05 | Página de fisioterapia ligada à PKZ e ao One to One, com card na Home e sem item novo no menu | Leonardo Camero | Primeira versão feita (17/11/2026); textos a confirmar com o cliente |
+| A05 | Página de fisioterapia ligada à PKZ e ao One to One, com card na Home | Leonardo Camero | Primeira versão feita (17/11/2026); no menu desde 18/11/2026, a pedido do professor; textos a confirmar com o cliente |
 
 **Registro do Scrum Master**
 
@@ -175,3 +175,4 @@ O Scrum Master sobe a base do projeto primeiro. As branches dos integrantes só 
 - 16/11/2026: logos oficiais enviados pelo cliente (Playmakerz e One to One Studio) aplicados no header e no footer, em SVG, no lugar do "PKZ" em PNG e do "ONE TO ONE" em texto.
 - 17/11/2026: pedido do cliente: página de fisioterapia (`/fisioterapia`), ligada às duas empresas. Entra por um card na Home, abaixo de PKZ e One to One, sem mudar o menu. Textos provisórios.
 - 17/11/2026: agendamento com campo "Atendimento" (aula experimental, fisioterapia ou avaliação). Os botões da página de fisioterapia já abrem o agendamento com fisioterapia marcada, e a confirmação mostra o tipo escolhido.
+- 18/11/2026: pedidos do professor: Fisioterapia entra no menu, e cada hero (Home, PKZ, One to One e Fisioterapia) fica só com o botão de agendar; os segundos botões ("Conhecer os estúdios", "Ver como acompanhamos", "Conhecer o estúdio" e "Como funciona") saíram. Com um item a mais, o menu completo não cabia em telas entre 800px e 1024px, então o menu ☰ passa a valer até 1024px.

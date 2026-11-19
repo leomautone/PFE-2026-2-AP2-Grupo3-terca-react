@@ -33,7 +33,7 @@ export default function Header({ claro = false }) {
 
   // ao voltar para o desktop, o menu não fica preso aberto
   useEffect(() => {
-    const celular = window.matchMedia("(max-width: 800px)");
+    const celular = window.matchMedia("(max-width: 1024px)");
     function aoMudarTela(evento) {
       if (!evento.matches) setMenuAberto(false);
     }
@@ -75,6 +75,7 @@ export default function Header({ claro = false }) {
           <NavLink to="/" end className={classeDoLink} onClick={fecharMenu}>Início</NavLink>
           <NavLink to="/pkz" className={classeDoLink} onClick={fecharMenu}>PKZ</NavLink>
           <NavLink to="/onetoone" className={classeDoLink} onClick={fecharMenu}>One to One</NavLink>
+          <NavLink to="/fisioterapia" className={classeDoLink} onClick={fecharMenu}>Fisioterapia</NavLink>
           <NavLink to="/agendamento" className={classeDoLink} onClick={fecharMenu}>Agendamento</NavLink>
           <a href="#contato" onClick={fecharMenu}>Contato</a>
         </nav>

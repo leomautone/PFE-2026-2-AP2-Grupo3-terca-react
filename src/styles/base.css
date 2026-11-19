@@ -353,6 +353,11 @@ img.foto {
 
 .menu a {
   opacity: 0.8;
+  white-space: nowrap;
+}
+
+.header .botao {
+  white-space: nowrap;
 }
 
 .menu a:hover,
@@ -425,7 +430,8 @@ img.foto {
   }
 }
 
-@media (max-width: 800px) {
+/* menu ☰ até 1024px: com todos os itens, o menu completo não cabe em telas menores */
+@media (max-width: 1024px) {
   .header-conteudo {
     position: relative;
     gap: 12px;
@@ -467,7 +473,9 @@ img.foto {
     padding: 10px 16px;
     margin-left: auto;
   }
+}
 
+@media (max-width: 800px) {
   .grade-2,
   .grade-3,
   .grade-4 {

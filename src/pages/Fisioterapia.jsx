@@ -25,9 +25,6 @@ export default function Fisioterapia() {
                 <Link to="/agendamento?tipo=Fisioterapia" className="botao botao-claro">
                   Agendar avaliação
                 </Link>
-                <a href="#como-funciona" className="botao botao-claro">
-                  Como funciona ↓
-                </a>
               </div>
             </div>
             <img
